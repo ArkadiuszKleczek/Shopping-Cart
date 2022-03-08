@@ -6,12 +6,15 @@ export default  function Header(props) {
     return (
         <header className="row block center">
             <div>
-                <a href="#">
+                <a href="#" className="siteName">
                     Shopping Cart
                 </a>
             </div>
             <div>
-                <a href="#/cart"> Cart </a>
+                <input type="text" placeholder="Search..."/>
+            </div>
+            <div>
+                <a href="#/cart" > Cart </a>
                 <a href="#/signin"> Sign In</a>
             </div>
         </header>
