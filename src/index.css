@@ -1,9 +1,10 @@
 body {
     /*font-family: 'Abril Fatface', cursive;*/
+    line-height: 1.5;
     font-family: 'Roboto', sans-serif;
     background: rgb(22,74,65);
     background: linear-gradient(90deg, rgba(22,74,65,1) 1%, rgba(77,119,78,1) 50%, rgba(157,200,141,1) 100%);
-    color: #f1efef;
+    color: #FFFFFF;
 }
 
 h1, h2, h3 {
@@ -16,13 +17,16 @@ h1 {
 }
 h2 {
     font-size: 1.5rem;
+
 }
 h3 {
-    font-size: 1rem
+    font-size: 1rem;
+    text-align: center;
 }
 a{
     text-decoration: none;
     color: #F1B24A;
+    font-weight: bold;
 }
 .row {
     display: flex;
@@ -38,28 +42,31 @@ a{
     background: #365e37;
     padding: 1rem;
     margin: 0.5rem;
-    border-radius: 0.5rem;
-
-    /*border: 1px solid #184918;*/
+    border-radius: 0.5rem 2rem;
+    border: 1px solid #2c4b2d;
 }
 .row.center {
     align-items: center;
 }
 img.small {
     max-height: 8rem;
-    border-radius: 0.5rem;
-    border: 1px solid #f1efef;
+    border-radius: 0.3rem 2rem;
+    border: 1px solid #FFFFFF;
 }
 button {
     background-color: #F1B24A;
-    color: #f1efef;
-    font-size: 1rem;
+    color: #FFFFFF;
+    font-size: 1.05rem;
+    font-weight: bold;
     padding: 0.15rem;
     border-radius: 0.5rem;
-    border-color: dimgray;
+    border-color: #343333FF;
     width: 100%;
     cursor: pointer;
 }
+
+
+
 .siteName {
     font-size: 2rem;
     font-style: italic;
@@ -70,5 +77,89 @@ input {
     height: 1.5rem;
     font-size: 1.2rem;
     padding-left: 0.3rem;
-    background-color: #DAD5D5FF;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+}
+select {
+    width: 15rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    padding-left: 0.3rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+}
+.header-search-input {
+    width: 70%;
+    height: 2rem;
+    font-size: 1.2rem;
+}
+
+
+.text-right {
+    text-align: right;
+}
+button.form {
+    width: 5rem;
+    height: 2rem;
+    margin: 0 1rem;
+
+}
+.submit {
+    width: 5rem;
+    height: 2rem;
+}
+.submit2 {
+    width: 8rem;
+    height: 2rem;
+    margin: 0 1rem;
+}
+.small-button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.remove{
+    background-color: #FFFFFF;
+    color: #F1B24A;
+
+}
+
+.add {
+    background-color: #F1B24A;
+    color: #FFFFFF;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.align {
+    text-align: center;
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 2px solid #FFFFFF;
+    margin: 1em 0; padding: 0; }
+
+ul {
+    list-style-type: none;
+}
+aside {
+    margin: 0 100px;
 }

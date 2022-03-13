@@ -1,22 +1,38 @@
 import React from "react";
 
-
-
-export default  function Header(props) {
-    return (
-        <header className="row block center">
-            <div>
-                <a href="#" className="siteName">
-                    Shopping Cart
-                </a>
-            </div>
-            <div>
-                <input type="text" placeholder="Search..."/>
-            </div>
-            <div>
-                <a href="#/cart" > Cart </a>
-                <a href="#/signin"> Sign In</a>
-            </div>
-        </header>
-    )
+export default function Header(props) {
+  return (
+    <header className="block row">
+      <div>
+        <a href="#/">
+          <h1>Cart Components</h1>
+        </a>
+      </div>
+        <div className="center">
+            <form action="/" method="get">
+                <label htmlFor="header-search">
+                    <span className="visually-hidden">Search products</span>
+                </label>
+                <input
+                    className="header-search-input"
+                    type="text"
+                    id="header-search"
+                    placeholder="Search products..."
+                    name="s"
+                />
+                <button className="submit" type="submit">Search</button>
+            </form>
+        </div>
+      <div  className="center" >
+        <a style={{padding: '0 1rem'}} href="#/">
+          Cart{' '}
+          {
+              props.countCartItems ? (<button  className="small-button"> {props.countCartItems} </button>) : ('')
+          }
+        </a>
+          {' '}
+        <a  href="#/"> Login</a>
+      </div>
+    </header>
+  );
 }
