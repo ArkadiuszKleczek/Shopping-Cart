@@ -62,24 +62,24 @@ function App() {
             </section>*/}
             <Router>
                 <div>
-                    <div className="row">
+                    <div className="row block space">
 
-                        <ul>
-                            <li>
+
+                            <div>
                                 <Link to="/">Home</Link>
-                            </li>
-                            <li>
+                            </div>
+                            <div>
                                 <Link to="/basket">Basket</Link>
-                            </li>
-                            <li>
+                            </div>
+                            <div>
                                 <Link to="/forms">Forms</Link>
-                            </li>
-                            <li>
+                            </div>
+                            <div>
                                 <Link to="/register">Register</Link>
-                            </li>
-                        </ul>
+                            </div>
 
-                        <hr />
+
+
                     </div>
                     <Switch>
                         <Route exact path="/">

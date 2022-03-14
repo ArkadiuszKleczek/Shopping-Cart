@@ -2,8 +2,10 @@ body {
     /*font-family: 'Abril Fatface', cursive;*/
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
-    background: rgb(22,74,65);
-    background: linear-gradient(90deg, rgba(22,74,65,1) 1%, rgba(77,119,78,1) 50%, rgba(157,200,141,1) 100%);
+    background-color: #1d1d1e;
+    background-image: linear-gradient(120deg, #1d1d1e 29%, #3f1c45 53%, #160228 64%);
+
+
     color: #FFFFFF;
 }
 
@@ -25,7 +27,7 @@ h3 {
 }
 a{
     text-decoration: none;
-    color: #F1B24A;
+    color: #FFFFFF;
     font-weight: bold;
 }
 .row {
@@ -39,11 +41,11 @@ a{
     flex: 2;
 }
 .block {
-    background: #365e37;
+    background: #1d1d1e;
     padding: 1rem;
     margin: 0.5rem;
     border-radius: 0.5rem 2rem;
-    border: 1px solid #2c4b2d;
+    border: 1px solid rgba(240, 240, 240, 0.89);
 }
 .row.center {
     align-items: center;
@@ -54,13 +56,13 @@ img.small {
     border: 1px solid #FFFFFF;
 }
 button {
-    background-color: #F1B24A;
+    background-color: #5e2b80;
     color: #FFFFFF;
     font-size: 1.05rem;
     font-weight: bold;
     padding: 0.15rem;
     border-radius: 0.5rem;
-    border-color: #343333FF;
+    border-color: #ffffff;
     width: 100%;
     cursor: pointer;
 }
@@ -120,20 +122,34 @@ button.form {
 }
 .remove{
     background-color: #FFFFFF;
-    color: #F1B24A;
+    color: #5e2b80;
 
 }
 
 .add {
-    background-color: #F1B24A;
+    background-color: #5e2b80;
     color: #FFFFFF;
 }
+
+.space {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding:  0.2rem 0;
+    text-align: center;
+    border-radius: 0.2rem 0.2rem 1rem 1rem;
+}
+.header-radius {
+    border-radius: 1rem 1rem 0.2rem 0.2rem;
+    margin-bottom: -1rem;
+}
+
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .bold {
     font-weight: bold;
     font-size: 1.2rem;
